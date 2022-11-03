@@ -1,0 +1,236 @@
+<html>
+<head>
+  <title></title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="description" content="" />
+  <meta name="author" content="Ahmed Mosaad>
+    <meta
+      name=" keywords" content="ahmed Mosaad , web developer , html , css , js ," />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav>
+      <div id="sideBar">
+        <div id="boxMenu" class="py-5 bg-black px-2">
+          <div class="nav-item">
+            <ul class="d-flex text-center list-unstyled text-white flex-column">
+              <li class="pt-4"><a class="item-icon text-decoration-none text-white" id="Search-link">Search</a></li>
+              <li class="pt-4"><a class="item-icon text-decoration-none text-white" id="Categories-link">Categories</a></li>
+              <li class="pt-4"><a class="item-icon text-decoration-none text-white" id="Area-link">Area</a></li>
+              <li class="pt-4"><a class="item-icon text-decoration-none text-white" id="Ingredients-link">Ingredients</a></li>
+              <li class="pt-4"><a class="item-icon text-decoration-none text-white" id="Contact-link">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="text-center">
+            <a><i class="fab fa-facebook-f"></i></a>
+            <a><i class="fab fa-twitter"></i></a>
+            <a><i class="fas fa-globe"></i></a>
+            <div class="pt-3">
+              <span>Copyright Â© 2019 All Rights Reserved.</span>
+            </div>
+          </div>
+        </div>
+        <div id="menu-tab" class="w-25 py-4 px-1">
+          <div>
+            <img class="w-100" src="images/logo.png" alt="logo">
+          </div>
+          <div id="Toggle-menu">
+            <i id="icon-menu" class="fa fa-align-justify"></i>
+          </div>
+          <div class="d-flex flex-column">
+            <i class="fas fa-globe py-1"></i>
+            <i class="fas fa-share-alt"></i>
+          </div>
+        </div>
+      </div>
+  </nav>
+  <section id="Search" class="d-none">
+    <div class="loading-container">
+      <div class="sm-loading position-absolute ">
+        <i class="fa fa-spinner fa-spin fa-4x"></i>
+      </div>
+    </div>
+    <div class="container">
+      <div class="pt-5 search-tab">
+        <input class="form-control search-input" placeholder="Search By Name" id="searchByName"type="text">
+        <input class="form-control search-input" placeholder="Search By First Litter"id="searchByFirstLetter" type="text">
+      </div>
+      <div class="row gy-4 my-5 p-5" id="SearchData">
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="meal-details" class="d-none">
+    <div class="loading-container">
+      <div class="sm-loading position-absolute ">
+        <i class="fa fa-spinner fa-spin fa-4x"></i>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row text-white my-5 p-5" id="mealDetails">
+
+      </div>
+    </div>
+  </section>
+  
+  <section id="Category" class="d-none">
+    <div class="loading-container">
+      <div class="sm-loading position-absolute ">
+        <i class="fa fa-spinner fa-spin fa-4x"></i>
+      </div>
+    </div>
+      <div class="container">
+        <div class="row gy-4 my-5 p-5" id="CategoryData">
+          
+        </div>
+      </div>
+    </section>
+
+  <section id="Category-Fillter" class="d-none">
+    <div class="loading-container">
+      <div class="sm-loading position-absolute ">
+        <i class="fa fa-spinner fa-spin fa-4x"></i>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row gy-4 my-5 p-5" id="CategoryFillterElement">
+        
+        
+        
+      </div>
+    </div>
+  </section>
+  
+  <section id="Area" class="d-none">
+    <div class="loading-container">
+      <div class="sm-loading position-absolute ">
+        <i class="fa fa-spinner fa-spin fa-4x"></i>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row gy-4 my-5 p-5" id="areaData">
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="Area-Fillter" class="d-none">
+    <div class="loading-container">
+      <div class="sm-loading position-absolute ">
+        <i class="fa fa-spinner fa-spin fa-4x"></i>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row gy-4 my-5 p-5" id="AreaFilterElement">
+        
+      </div>
+    </div>
+  </section>
+  
+  
+  <section id="Ingredients" class="d-none">
+    <div class="loading-container">
+      <div class="sm-loading position-absolute ">
+        <i class="fa fa-spinner fa-spin fa-4x"></i>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row gy-4 my-5 p-5" id="IngredientsData">
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="Ingredient-Fillter" class="d-none">
+    <div class="loading-container">
+      <div class="sm-loading position-absolute ">
+        <i class="fa fa-spinner fa-spin fa-4x"></i>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row gy-4 my-5 p-5" id="IngredientFilterElement">
+        
+      </div>
+    </div>
+  </section>
+  <section class="d-none container w-75 text-center my-1 py-2 mt-5 position-relative" id="Contact-Us">
+    <div class="loading-container">
+      <div class="sm-loading position-absolute ">
+        <i class="fa fa-spinner fa-spin fa-4x"></i>
+      </div>
+    </div>
+
+
+    <div class="row mt-3 p-2" id="rowData">
+      <section id="contact" class="container myM w-75 mx-auto mb-5 ">
+        <div class="p-2">
+          <h2 class="text-light mb-5">ContacUs...</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input class="form-control shadow " onkeyup="validation()" id="name" placeholder="Enter Your Name">
+                <div class="alert mt-1 alert-danger d-none" id="namealert" role="alert">
+                  Special Characters and Numbers not allowed
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input onkeyup="validation()" class="form-control" id="email" placeholder="Enter Email">
+                <div class="alert mt-1 alert-danger d-none" id="emailalert" role="alert">
+                  Enter valid email. *Ex: xxx@yyy.zzz
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input onkeyup="validation()" class="form-control" id="phone" placeholder="Enter phone">
+                <div class="alert mt-1 alert-danger  d-none" id="phonealert" role="alert">
+                  Enter valid Phone Number
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input onkeyup="validation()" class="form-control" id="age" placeholder="Enter Age">
+                <div class="alert mt-1 alert-danger  d-none" id="agealert" role="alert">
+                  Enter valid Age
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input onkeyup="validation()" class="form-control" type="password" id="password" placeholder="Enter Password">
+                <div class="alert mt-1 alert-danger  d-none" id="passwordalert" role="alert">
+                  Enter valid password *Minimum eight characters, at least one letter and one number:*
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input onkeyup="validation()" class="form-control" type="password" id="rePassword" placeholder="Enter RePassword">
+                <div class="alert mt-1 alert-danger  d-none" id="repasswordalert" role="alert">
+                  Enter valid Repassword
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" disabled="" id="submitBtn" class="btn btn-outline-danger">Submit</button>
+        </div>
+
+      </section>
+    </div>
+  </section>
+  
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
